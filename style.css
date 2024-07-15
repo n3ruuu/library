@@ -1,0 +1,136 @@
+:root {
+	--header: 124px;
+	--footer: 40px;
+	--main: calc(100vh - calc(var(--header) + var(--footer)));
+}
+
+* {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #aebfd6;
+    height: var(--header);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header button {
+    padding: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+}
+
+main {
+    height: var(--main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e2e8f0;
+}
+
+table {
+    width: 1000px;
+    margin: 50px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 0 20px;
+}
+
+
+th {
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+#modal {
+    position: absolute;
+    background-color: #888e9bf3;
+    width: 30%;
+    top: 20%;
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border: none;
+    text-align: center;
+    padding: 25px;
+    margin: 20px;
+}
+
+input,
+select,
+#add-btn,
+#cancel-btn {
+    height: 50px;
+    width: 80%;
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.2rem;
+}
+
+legend {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+select,
+#add-btn {
+    height: 70px;
+}
+
+.status {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#cancel-btn {
+    height: 60px;
+    background-color: #e2e8f0;
+}
+
+.delete {
+    width: 30px;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+}
+
+fieldset button {
+    background-color: #9fff9c;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+footer {
+    height: var(--footer);
+    position: fixed;
+    margin-top: 2rem;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>My Manga Library</h1>
+        <button>+ Add New Book</button>
+    </header>
+    <main>
+        <table class="book-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Chapters</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody></tbody>
+        </table>
+
+        <div id="modal" style="display: none;">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Manga Information</legend>
+
+                    <input type="text" name="title" id="title" placeholder="Title of the Manga" required>
+                    <input type="text" name="author" id="author" placeholder="Author of the Manga" required>
+                    <input type="number" name="chapters" id="chapters" placeholder="Number of Chapters" required>
+
+                    <select name="status" required>
+                        <option value="Finished">Finished</option>
+                        <option value="Not Finished">Not Finished</option>
+                    </select>
+
+                    <button type="submit" id="add-btn">Add Book</button>
+                    <button type="button" id="cancel-btn">Cancel</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer>Created by: mustbeneru © <script>document.write(new Date().getFullYear())</script></footer> 
+</body>
+</html>
